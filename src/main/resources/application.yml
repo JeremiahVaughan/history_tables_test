@@ -1,0 +1,17 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+#    url: jdbc:postgresql://192.168.1.229:5432/postgres
+#    username: postgres
+#    password: aa9ea8be-0b4e-456c-b22e-5b884ad19ac2
+#    driver-class-name: org.postgresql.Driver
+   url: jdbc:h2:mem:testdb
+   driverClassName: org.h2.Driver
+   username: sa
+   password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.H2Dialect
